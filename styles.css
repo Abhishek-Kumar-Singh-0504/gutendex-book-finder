@@ -1,0 +1,157 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Adjust to the design's font */
+    background-color: #f4f4f9; /* Update according to the design */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #3498db; /* Update according to the design */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Adjust to the design */
+    font-weight: 700; /* Make sure the weight matches the design */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page.active {
+    display: block;
+}
+
+.genre-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.genre-buttons button {
+    background-color: #3498db; /* Button background as per design */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1 1 200px;
+    max-width: 200px;
+}
+
+.genre-buttons button:hover {
+    background-color: #2980b9; /* Hover state as per design */
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    width: 90%;
+    max-width: 600px;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.book-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.book-item:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); /* Hover state shadow */
+}
+
+#loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+footer {
+    background-color: #3498db; /* Footer background as per design */
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .genre-buttons button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    #search-bar {
+        font-size: 1rem;
+    }
+
+    .book-item {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .genre-buttons button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    #search-bar {
+        font-size: 0.9rem;
+    }
+
+    .book-item {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gutendex Book Finder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gutendex Book Finder</h1>
+    </header>
+    <main id="app">
+        <!-- Genre Selection Page -->
+        <section id="genre-page" class="page active">
+            <div id="genres" class="genre-buttons">
+                <!-- Genre buttons will be added here by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Book Listing Page -->
+        <section id="books-page" class="page">
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="Search books by title or author">
+            </div>
+            <div id="books" class="book-list">
+                <!-- Book items will be added here by JavaScript -->
+            </div>
+            <div id="loading">Loading more books...</div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Gutendex Book Finder</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
